@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>BuyNearby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="top" class="animate__animated animate__pulse">
+        <img src = "img/icon.png" id="logo">
+        <p id="logo_text">BuyNearby</p> 
+    </div>
+    <img id="selectLocation" src = "img/marker.png" style="position: absolute; height: 35px; width: auto; top: 0; left: 450px; margin: 7px;">
+    <div id="input">
+        <form id="productForm">
+            <input type="text" placeholder="Search Product" id="productInput">
+            <button type="submit" id="productButton" autocomplete="off"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="slider" style="display: flex; margin-top: 5px; margin-right: 5px;">
+            <p class="title">Range </p>
+            <p class="text">1km</p>
+            <input type="range" min="1" max="50" value="25" id="rangeInput">
+            <p class="text">50km</p>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="popup" class="animate__animated animate__fadeInDown">
+        <div style="width: 80%;">
+            <div style="display: flex; margin-bottom: 10px;">
+                <img src = "img/icon.png" style="height: 45px; width: auto;" id="logo">
+                <p id="logo_text">Location Needed</p> 
+            </div>
+            <form id="locationForm">
+                <input type="text" placeholder="Enter Location" id="locationInput">
+                <button type="submit" id="locationButton"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div id="error" class="animate__animated animate__fadeInLeft">
+        <p class="text">Error</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFQbiRYIy5Dk0BVzLbmhlc8ab3Dlvdiao&libraries=places&callback=initMap">
+</script>
+  </body>
+</html>

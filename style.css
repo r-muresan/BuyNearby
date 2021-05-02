@@ -1,0 +1,114 @@
+html,
+body {
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+#top{
+    height: 10%;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+#logo{
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 2px;
+    height: 100%;
+    width: auto;
+}
+#logo_text{
+    margin: 0;
+    margin-left: 5px;
+    height: 100%;
+    width: auto;
+    font-family: 'Racing Sans One', cursive;
+    font-size: auto;
+    font-size: 40px;
+}
+
+
+
+#input{
+    height: 15%;
+}
+#map {
+    height: 75%;
+}
+input{
+    width: 100%;
+    height: 40%;
+}
+.text{
+    margin: 0;
+    font-size: 1rem;
+}
+.title{
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 10%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#popup{
+    width: 500px;
+    height: 510px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgba(183, 187, 240, 0.95), rgba(226, 167, 167, 0.92));
+}
+#error{
+    background-color: rgba(225, 0, 0, 0.95);
+    position: absolute;
+    left: 0;
+    top: 475px;
+    width: 200px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+
+
+
+form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #0874fc;
+    color: white;
+    font-size: 17px;
+    border: 0;
+    border-left: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #085ccc;
+}
+
+form::after {
+    content: "";
+    clear: both;
+    display: table;
+}

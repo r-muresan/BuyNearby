@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Buy Nearby",
+    "description": "Recommends local businesses!",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "128": "img/icon128.png"
+    },
+    "permissions": [
+        "geolocation",
+        "activeTab"
+    ],
+    "content_security_policy": "script-src 'self' https://maps.googleapis.com; object-src 'self'"
+}
